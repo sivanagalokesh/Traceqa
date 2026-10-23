@@ -1,0 +1,152 @@
+{
+  "source_files": {
+    "v1": "data/ct200_manual_v1.pdf",
+    "v2": "data/ct200_manual_v2.pdf"
+  },
+  "extraction_methods": {
+    "v1": "PyMuPDF text + table extraction",
+    "v2": "PyMuPDF text + table extraction"
+  },
+  "versions": {
+    "v1": {
+      "pdf_pages": 6,
+      "extracted_characters": 6309,
+      "parsed_nodes_including_title_intro": 28,
+      "expected_section_headings": 27,
+      "predicted_section_headings": 27,
+      "heading_precision_recall_f1": {
+        "n": 27,
+        "tp": 27,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "parent_assignment_accuracy": 1.0,
+      "parent_assignments_correct": 27,
+      "parent_assignments_total": 27,
+      "parent_errors": []
+    },
+    "v2": {
+      "pdf_pages": 7,
+      "extracted_characters": 6889,
+      "parsed_nodes_including_title_intro": 29,
+      "expected_section_headings": 28,
+      "predicted_section_headings": 28,
+      "heading_precision_recall_f1": {
+        "n": 28,
+        "tp": 28,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "parent_assignment_accuracy": 1.0,
+      "parent_assignments_correct": 28,
+      "parent_assignments_total": 28,
+      "parent_errors": []
+    }
+  },
+  "version_matching": {
+    "exact_logical_key_common_sections": 27,
+    "expected_common_sections": 27,
+    "precision_recall_f1_by_section_identity": {
+      "n": 27,
+      "tp": 27,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "false_negative_rate": 0.0
+    }
+  },
+  "change_detection": {
+    "expected_modified": [
+      "2.1.1.1 Battery Life Under Typical Use",
+      "3.2 Cuff Inflation Sequence",
+      "4.2 Error Codes",
+      "4.3 Alarm Thresholds"
+    ],
+    "predicted_modified": [
+      "2.1.1.1 Battery Life Under Typical Use",
+      "3.2 Cuff Inflation Sequence",
+      "4.2 Error Codes",
+      "4.3 Alarm Thresholds"
+    ],
+    "modified_precision_recall_f1": {
+      "n": 4,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "false_negative_rate": 0.0
+    },
+    "expected_added": [
+      "5.3 Data Export"
+    ],
+    "predicted_added": [
+      "5.3 Data Export"
+    ],
+    "added_precision_recall_f1": {
+      "n": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "false_negative_rate": 0.0
+    },
+    "expected_removed": [],
+    "predicted_removed": [],
+    "removed_precision_recall_f1": {
+      "n": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "accuracy": null,
+      "false_negative_rate": null,
+      "note": "No expected or predicted positive examples; metrics are undefined."
+    },
+    "section_level_staleness_proxy_recall": 1.0,
+    "note": "Section-level hash-change proxy only; not an end-to-end evaluation of generated QA cases or their clinical relevance."
+  },
+  "table_smoke_checks": {
+    "v1": {
+      "specification_table_markdown": true,
+      "error_table_markdown": true,
+      "contains_e6_row": false
+    },
+    "v2": {
+      "specification_table_markdown": true,
+      "error_table_markdown": true,
+      "contains_e6_row": true
+    }
+  },
+  "not_measured": [
+    "Full-document CER/WER: no manually transcribed complete reference text was prepared.",
+    "LLM test-case quality: no LLM-generated cases were human-scored in this evaluation.",
+    "API end-to-end behavior is covered by tests/test_api_workflow.py, not by this section-metric report."
+  ]
+}

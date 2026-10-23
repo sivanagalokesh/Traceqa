@@ -1,0 +1,31 @@
+{
+  "instructions": "Replace examples with manually reviewed cases from the actual CT-200 v1/v2 manuals. Do not report scores from placeholder examples as project performance.",
+  "version_matching": [
+    {
+      "case_id": "match-001",
+      "v1_section_id": "manual-v1-section-id",
+      "v2_section_id": "manual-v2-section-id-or-null",
+      "expected_match": true,
+      "notes": "Describe why these sections correspond."
+    }
+  ],
+  "change_detection": [
+    {
+      "case_id": "change-001",
+      "source_section": "section-id",
+      "expected_changed": true,
+      "critical_change": true,
+      "change_type": "threshold|unit|warning|instruction|other",
+      "notes": "Quote or reference the exact source change for reviewer audit."
+    }
+  ],
+  "staleness": [
+    {
+      "case_id": "stale-001",
+      "generation_id": "generation-id",
+      "expected_status": "review_required",
+      "critical": true,
+      "notes": "State which source change affects this generated case."
+    }
+  ]
+}
