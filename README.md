@@ -1,5 +1,9 @@
 # TraceQA — Medical Document Intelligence
 
+**Live demo:** https://traceqa.onrender.com/  
+**API documentation:** https://traceqa.onrender.com/docs  
+**GitHub repository:** https://github.com/sivanagalokesh/Traceqa
+
 A full-stack starter implementation for the Tri9T AI Engineering Internship assignment. TraceQA ingests a technical manual, reconstructs a section tree, preserves versions, pins selections to source snapshots, generates schema-validated QA test-case ideas, and surfaces stale traceability.
 
 ## Features
